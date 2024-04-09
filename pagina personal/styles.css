@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(76, 90, 86); /* Color de fondo para todo el cuerpo */
+}
+
+header {
+    max-width: 100%;
+    margin-top: 0%;
+    padding: 0;
+    background-color: rgba(0, 100, 0, 0.5); /* Fondo verdoso semitransparente */
+    border-radius: 1px;
+    text-align: center;
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Añadir espacio alrededor del contenido del encabezado */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Color de fondo semitransparente al pasar el ratón */
+    border-radius: 5px; /* Añadir bordes redondeados en hover */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0; /* Eliminar el espacio inferior del último elemento */
+    }
+}
